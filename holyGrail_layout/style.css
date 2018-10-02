@@ -37,7 +37,7 @@ article, aside, nav {
 }
 
 article {
-    background: lightpink;
+    background: lightgray;
     flex-grow: 5
 }
 
