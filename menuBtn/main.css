@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+header {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    
+
+}
+
+#menu-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-right: 15px;
+    /* transition: all 1s ease-in; */
+}
+
+.btn-line {
+    width: 35px;
+    height: 4px;
+    background: black;
+    margin: 0 0 4px 0;
+    transition: all 0.3s ease-in;
+}
+
+/* button transformation on click */
+.close>.btn-line:nth-child(1){
+     
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.close>.btn-line:nth-child(2){
+    opacity: 0;
+}
+
+.close>.btn-line:nth-child(3){
+    transform: rotate(-45deg) translate(7px,-6px);
+}
