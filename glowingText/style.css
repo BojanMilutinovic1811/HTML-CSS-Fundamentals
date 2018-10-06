@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    background: #262626;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-button {
+    margin: 20px;
+}
+.button-line {
+    background: white;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px
+}
+
+h1 {
+    font-size: 6rem;
+    margin-bottom: 30px;
+    letter-spacing: 0.9rem;
+}
+
+h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.4rem;
+    margin-bottom: 30px;
+}
+
+ul {
+    margin-top: 20px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: #fff900 solid 2px; 
+    box-shadow: 0 0 10px #fff900, 0 0 20px #ff6c00;
+    border-radius: 5%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    transition: all 0.4s ease-out 2s;
+    transform: rotate(15deg);
+    transform-origin: top left;
+}
+
+li {
+    color: #484848;
+    animation: animate 1s infinite linear;
+}
+
+.space {
+    margin-left: 2rem;
+}
+
+@keyframes animate {
+
+    0% {
+        color: #484848;
+        text-shadow: none;
+    }
+    18% {
+        color: #484848;
+        text-shadow: none;
+    }
+    20% {
+        color: #fff900;
+        text-shadow: 0 0 10px #fff900, 0 0 20px #ff6c00;
+    }
+    30% {
+        color: #484848;
+        text-shadow: none;
+    }
+    35% {
+        color: #fff900; 
+        text-shadow: 0 0 10px #fff900, 0 0 20px #ff6c00;
+    }
+    70% {
+        color: #484848;
+        text-shadow: none;
+    }
+
+    85% {
+        color: #fff900;
+        text-shadow: 0 0 10px #fff900, 0 0 20px #ff6c00;
+    }
+
+
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #484848;
+        text-shadow: none;
+    }
+
+}
+
