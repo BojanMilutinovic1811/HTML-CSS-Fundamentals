@@ -284,6 +284,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -293,8 +294,33 @@ header {
     background: #484848;
     border: white solid 3px;
     margin: 10px 10px; 
+    transition: all 0.4s;
 }
 
+.work:hover {
+    transform: scale(1.2);
+}
+
+.imgBackground {
+    height: 85%;
+}
+.typenspeak {
+    background: url(typeNspeak.png) center center/cover;
+}
+.loanCalculator {
+    background: url(loanCalculator.png) center center/cover;
+}
+.webPage {
+    background: url(webPage.png) center center/cover;
+}
+.bootstrapWebpage {
+    background: url(bootstrapWebpage.png) center center/cover;
+}
+
+.gitHub {
+    height: 15%;
+    background: white;
+}
 
 /* conctact section */
 #contact {
