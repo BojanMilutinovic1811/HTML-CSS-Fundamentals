@@ -57,10 +57,23 @@ header {
     top: 0;
     height: 100vh;
     width: 100%;
-    margin-top: 500%;
+    margin-right: 200%;
     background: #262626;
+    visibility: hidden;
     /* background: url(menu-background.jpg) center center/cover; */
     transition: all 0.5s ease-out;
+}
+
+.menu-portrait {
+    background: url(about.jpg) center center/cover;
+    height: 100vh;
+    width: 50%;
+}
+
+.menu-list {
+    width: 50%;
+    height: 100vh;
+    text-align: center;
 }
 
 .menu-item {
@@ -87,7 +100,6 @@ header {
 .menu-show {
     visibility: visible;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -220,6 +232,15 @@ header {
     background: url(about.jpg) center center/cover;
     height: 100vh;
     padding-top: 30px;
+    position: relative;
+}
+
+#cv {
+    position: absolute;
+    bottom: 25px;
+    font-size: 2rem;
+    right: 50%;
+    transform: translateX(48%)
 }
 
 
@@ -232,6 +253,7 @@ header {
     color: white;
     width: 75%;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .title {
@@ -273,8 +295,76 @@ header {
     margin: 10px 10px; 
 }
 
+
+/* conctact section */
 #contact {
-    background: #262626;
     height: 50vh;
+    background: #262626;
+}
+
+.contact-title {
+    height: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.4rem;
     color: #acffff;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #00b5d4;
+}
+
+.contact-animate {
+    animation: animate 1s infinite linear;
+    
+}
+.drop-contact {
+    display: inline-block;
+    transform: rotate(-5deg);
+    transform-origin: top right;
+    color: #484848;
+    text-shadow: none;
+}
+
+.icons {
+    padding-top: 20px;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#contact ul {
+    display: flex;
+    /* padding-bottom: 15%; */
+}
+
+#contact ul li {
+    margin: 0 15px;
+}
+
+#contact ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    border: #666;
+    color: #666;
+    transition: .5s;
+}
+
+#contact ul li a:hover {
+    color: #acffff;
+    text-shadow: 0 0 5px #acffff;
+    border: #acffff 2px solid;
+    box-shadow: 0 0 15px #acffff;
 }
