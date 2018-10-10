@@ -26,7 +26,7 @@ header {
     right: 0;
     z-index: 3;
     cursor: pointer;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-right: 15px;
 }
 
@@ -58,47 +58,48 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
-    width: 0;
+    height: 0;
+    width: 100%;
     background: #262626;
-    visibility: hidden;
-    overflow-x: hidden;
+    /* visibility: hidden; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: width 0.5s, visibility 0s;
+    overflow: hidden;
+    transition: 0.5s; 
 }
 
 .menu-show {
-    visibility: visible;
-    width: 100%;
+    /* visibility: visible; */
+    height: 100vh;
 }
 
 .menu a {
+    text-transform: uppercase;
+    letter-spacing: 4px;
     color: #acffff;
     text-decoration: none;
     font-size: 3rem;
-    transition: visibility 0s, text-shadow .4s;
+    margin-bottom: 5px;
+    font-weight: bold;
+    /* transition: text-shadow .4s; */
+}
+.menu-item {
+    transition: .4s;
 }
 
-.menu a:hover {
+.menu-item:hover {
     transform: scale(1.1);
     text-shadow: 0 0 10px #0ff, 0 0 20px #00b5d4;
-}
-.menu-list {
-    border: solid white 2px;
 }
 
 .menu-quote {
     max-width: 70%;
-    border: solid white 2px;
-    margin-top: 10%;
-    background: white;
-    opacity: 0.2;
+    color: #acffff;
+    margin-top: 30px;
     padding: 20px;
-    border-radius: 5px;
 }
 
 /* main(home) section */
@@ -212,7 +213,7 @@ header {
 
 .text-shadow {
     color: #acffff;
-    text-shadow: 0 0 10px #0ff, 0 0 20px #00b5d4;
+    text-shadow: 0 0 13px #0ff, 0 0 25px #00b5d4;
 }
 
 .turn-off {
@@ -311,8 +312,7 @@ header {
 
 #myWork {
     background: #bdc7d5;
-    min-height: 100vh;
-    padding-top: 30px;
+    padding: 30px 10px;
 }
 
 .workContainer {
@@ -329,7 +329,7 @@ header {
     background: #484848;
     border: white solid 3px;
     margin: 10px 10px; 
-    transition: all 0.4s;
+    transition: all 0.4s ease;
 }
 
 .work:hover {

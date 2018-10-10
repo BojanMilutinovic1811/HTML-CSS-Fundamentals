@@ -10,11 +10,15 @@ let showMenu = false;
 
 const quotes = [
     {
+        quote: "Possession make you rich? I don't have that type of richness. My richness is Life, forever.",
+     author: "Bob Marley"
+    },
+    {
         quote: "Do you think that I count the days? There is only one day left, always starting over: it is given to us at dawn and taken away from us at dusk.",
      author: "Jean-Paul Sartre"
     },
      {
-         quote:"Alice:How long is forever? White Rabbit:Sometimes, just one second.",
+         quote:"Alice: How long is forever? White Rabbit: Sometimes, just one second.",
       author:"Lewis Carroll"
     },
      {
@@ -50,6 +54,8 @@ const quotes = [
       author:"Ezra Bayda"
     },
 ];
+
+
 // menu button transformation to X(close option) on click and menu appearance 
 
 
