@@ -176,7 +176,7 @@ header {
 /* about section */
 
 #about {
-    background: url(about.jpg) center center/cover;
+    background: url(../images/about.jpg) center center/cover;
     height: 100vh;
     padding-top: 20px;
     position: relative;
@@ -215,7 +215,7 @@ header {
 
 #myWork {
     background: #bdc7d5;
-    padding: 30px 10px;
+    padding: 30px 10px 20px 10px;
     min-height: 80vh;
 }
 
@@ -244,19 +244,19 @@ header {
     height: 80%;
 }
 .typenspeak {
-    background: url(typeNspeak.png) center center/cover;
+    background: url(../images/typeNspeak.png) center center/cover;
 }
 .loanCalculator {
-    background: url(loanCalculator.png) center center/cover;
+    background: url(../images/loanCalculator.png) center center/cover;
 }
 .webPage {
-    background: url(webPage.png) center center/cover;
+    background: url(../images/webPage.png) center center/cover;
 }
 .bootstrapWebpage {
-    background: url(bootstrapWebpage.png) center center/cover;
+    background: url(../images/bootstrapWebpage.png) center center/cover;
 }
 .robofriends {
-    background: url(robofriends.png) center center/cover;
+    background: url(../images/robofriends.png) center center/cover;
 }
 
 .about-project {
@@ -410,6 +410,7 @@ footer {
     transition: .5s;
     transition-delay: 0.3s;
 }
+
 #cv:hover::after {
     left: 210px;
 }
@@ -534,6 +535,30 @@ footer {
     #cv {
         font-size: 1rem;
         padding: 7px 12px;
-        bottom: 50px;
+        bottom: 40px;
+    }
+
+    /* my work */
+
+    #myWork {
+        padding: 8px 10px 20px 10px;;
+    }
+
+    /* contact */
+
+    .contact-heading {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    #contact ul li {
+        margin: 7px 11px;
+    }
+    
+    #contact ul li a {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 20px;
     }
 }
