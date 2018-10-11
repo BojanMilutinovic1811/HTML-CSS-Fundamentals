@@ -1,3 +1,4 @@
+
 const menuBtn = document.getElementById('menu-btn'),
       menu = document.querySelector('.menu'),
       open = document.getElementById('open'),
@@ -5,8 +6,12 @@ const menuBtn = document.getElementById('menu-btn'),
       openList = document.querySelectorAll('.openList'),
       switchLights = document.querySelectorAll('.switch'),
       quoteText = document.getElementById('quote-text'),
-      quoteAuthor = document.getElementById('quote-author');
-let showMenu = false;
+      quoteAuthor = document.getElementById('quote-author'),
+      menuItems = document.querySelectorAll('.menu-item');
+
+let showMenu = false,
+    lightsInterval = 700,
+    dropDelay = lightsInterval * letters.length + 300;
 
 const quotes = [
     {
@@ -14,7 +19,7 @@ const quotes = [
      author: "Bob Marley"
     },
     {
-        quote: "Do you think that I count the days? There is only one day left, always starting over: it is given to us at dawn and taken away from us at dusk.",
+        quote: "Do you think that I count the days? There is only one day left, always starting over. It is given to us at dawn and taken away from us at dusk.",
      author: "Jean-Paul Sartre"
     },
      {
@@ -56,10 +61,22 @@ const quotes = [
 ];
 
 
-// menu button transformation to X(close option) on click and menu appearance 
-
+// transform menu button on click and show the menu
 
 menuBtn.addEventListener('click', transformBtn);
+
+//menu items close menu on click
+
+menuItems.forEach(item => {
+    item.addEventListener('click', closeMenu)
+});
+
+// drop open element on main page 
+
+document.addEventListener('DOMContentLoaded', dropOpen);
+
+
+//functions 
 
 function transformBtn() {
 
@@ -69,19 +86,17 @@ function transformBtn() {
         let quoteNum = Math.floor(Math.random()*quotes.length);
         quoteText.textContent = quotes[quoteNum].quote;
         quoteAuthor.textContent = quotes[quoteNum].author;
-
         showMenu = true;
     } else {
-        menuBtn.classList.remove('btn-close');
-        menu.classList.remove('menu-show')
-
-        showMenu = false;
+       closeMenu();
     }
 }
 
-// drop open part on main page 
-
-document.addEventListener('DOMContentLoaded', dropOpen);
+function closeMenu() {
+    menuBtn.classList.remove('btn-close');
+    menu.classList.remove('menu-show');
+    showMenu = false;
+}
 
 function dropOpen() {
     counterClass();
@@ -89,7 +104,7 @@ function dropOpen() {
         openList.forEach(li => li.classList.add('drop-li'))
         open.classList.add('drop');
         switchLights.forEach(element => element.classList.add('turn-off'))
-    }, 4500)
+    }, dropDelay)
 }
 
 function counterClass() {
@@ -101,5 +116,5 @@ function counterClass() {
         } else {
             clearInterval(interval)
         }
-    }, 800)
+    }, lightsInterval)
 }

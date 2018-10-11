@@ -1,13 +1,9 @@
-/* general set up*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'K2D', sans-serif;
-}
-
-ul {
     list-style: none;
 }
 
@@ -61,7 +57,6 @@ header {
     height: 0;
     width: 100%;
     background: #262626;
-    /* visibility: hidden; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +67,6 @@ header {
 }
 
 .menu-show {
-    /* visibility: visible; */
     height: 100vh;
 }
 
@@ -84,14 +78,17 @@ header {
     font-size: 3rem;
     margin-bottom: 5px;
     font-weight: bold;
-    /* transition: text-shadow .4s; */
 }
+
 .menu-item, .menu-item a {
     transition: .4s;
 }
 
-.menu-item:hover, .menu-item a:hover {
+.menu-item:hover {
     transform: scale(1.1);
+}
+
+.menu-item a:hover {
     color: #acffff;
     text-shadow: 0 0 10px #0ff, 0 0 20px #00b5d4;
 }
@@ -277,6 +274,7 @@ header {
 }
 
 /* conctact section */
+
 #contact {
     height: 50vh;
     background: #262626;
@@ -320,11 +318,12 @@ header {
 
 #contact ul {
     display: flex;
-    /* padding-bottom: 15%; */
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #contact ul li {
-    margin: 0 15px;
+    margin: 10px 15px;
 }
 
 #contact ul li a {
@@ -347,6 +346,18 @@ header {
     text-shadow: 0 0 5px #acffff;
     border: #acffff 2px solid;
     box-shadow: 0 0 15px #acffff, inset 0 0 15px #acffff;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #262626;
+    color: white;
+    height: 50px;
+    padding-top: 20px;
 }
 
 
@@ -454,6 +465,75 @@ header {
     }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 420px) {
+    .menu-show {
+        height: 105vh;
+    }
 
+    .menu p {
+        font-size: 0.8rem;
+    }
+
+    .menu a {
+        letter-spacing: 3px;
+        font-size: 2rem;
+    }
+
+    #menu-btn {
+        padding-top: 15px;
+        padding-right: 15px;
+    }
+
+    .btn-line {
+        width: 28px;
+        height: 3px;
+    }
+
+    #home .main-heading {
+        font-size: 4rem;
+        padding: 10px;
+    }
+
+    #home .sub-heading {
+        font-size: 1.5rem;
+    }
+
+    #open {
+        font-size: 1.5rem;
+        padding: 10px;
+        letter-spacing: 0.3rem;
+    }
+
+    .space {
+        margin-left: 1rem;
+    }
+
+
+
+    /* about section */
+
+    #about {
+        padding-top: 8px;
+    }
+
+    .section-content {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+        letter-spacing: 0.1rem;
+    }
+
+    .text {
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    #cv {
+        font-size: 1rem;
+        padding: 7px 12px;
+        bottom: 50px;
+    }
 }
