@@ -490,6 +490,11 @@ footer {
         height: 3px;
     }
 
+    .btn-close>.btn-line:nth-child(1) {
+
+        transform: rotate(45deg) translate(4px, 4px);
+    }
+
     #home .main-heading {
         font-size: 4rem;
         padding: 10px;
