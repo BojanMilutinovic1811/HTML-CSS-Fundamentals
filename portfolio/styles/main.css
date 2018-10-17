@@ -6,6 +6,9 @@
     font-family: 'K2D', sans-serif;
     list-style: none;
 }
+a {
+    text-decoration: none;
+}
 
 header {
     position: relative;
@@ -242,6 +245,8 @@ header {
 
 .imgBackground {
     height: 80%;
+    position: relative;
+    overflow: hidden;
 }
 .typenspeak {
     background: url(../images/typeNspeak.png) center center/cover;
@@ -566,4 +571,25 @@ footer {
         line-height: 45px;
         font-size: 20px;
     }
+}
+
+
+.progress::before {
+    
+    content: 'Work in progress...';
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    transition: .5s;
+
+}
+
+.progress:hover::before {
+    left: 0;
 }
