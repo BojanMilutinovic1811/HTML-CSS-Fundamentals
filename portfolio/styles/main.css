@@ -263,6 +263,9 @@ header {
 .robofriends {
     background: url(../images/robofriends.png) center center/cover;
 }
+.responsiveWebpage {
+    background: url(../images/responsiveWebpage.PNG) center center/cover;
+}
 
 .about-project {
     height: 20%;
