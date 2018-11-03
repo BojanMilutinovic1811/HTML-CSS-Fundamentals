@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+@font-face {
+    font-family: 'Linoleo Script';
+    src: url(LinoleoScript.ttf);
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'K2D', sans-serif;
+    font-family: 'Quicksand', sans-serif; 
     list-style: none;
 }
 a {
@@ -107,37 +113,61 @@ header {
 /* main(home) section */
 
 #home {
+    position: relative;
     height: 100vh;
-    background: #262626;
+    /* background: #262626; */
+    /* background: url(../images/wall.jpg) center center/cover; */
+    /* filter: grayscale(50%); */
     color: #acffff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
+}
+
+#home::before {
+    
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: url(../images/wall.jpg) center center/cover;
+        filter: grayscale(40%);
+        z-index: -5;
 }
 
 #home .main-heading {
-    font-size: 6rem;
-    margin-bottom: 30px;
-    letter-spacing: 0.9rem;
+    font-size: 8rem;
+    /* margin-bottom: 30px; */
+    /* letter-spacing: 0.9rem; */
+    margin-top: 50px;
     color: #484848;
-    text-transform: uppercase;
+    transform: rotate(-10deg);
+    transform-origin: top left; 
+    /* text-transform: uppercase; */
+    
+}
+.letters {
+    font-family: 'Linoleo Script', sans-serif !important;
+    font-size: 13rem;
+   letter-spacing: 10px;
 }
 
 #home .sub-heading {
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 300;
+    font-size: 4rem;
+    /* text-transform: uppercase; */
+    font-weight: bold;
     letter-spacing: 0.4rem;
     margin-bottom: 50px;
     color: #acffff;
-    text-shadow: 0 0 10px #0ff, 0 0 20px #00b5d4;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #00b5d4, 0 0 40px #009cb8, 0 0 40px #009cb8;
 }
 
 #open {
     display: flex;
+    font-family: 'Quicksand';
     padding: 20px;
     justify-content: center;
     align-items: center;
@@ -145,6 +175,8 @@ header {
     box-shadow: 0 0 10px #0ff, 0 0 20px #00b5d4, inset 0 0 10px #0ff, inset 0 0 20px #00b5d4;
     border-radius: 5px;
     font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: 0.7rem;
     color: #acffff;
@@ -167,12 +199,17 @@ header {
 
 .text-shadow {
     color: #acffff;
-    text-shadow: 0 0 13px #0ff, 0 0 25px #00b5d4;
+    text-shadow: 0 0 13px #0ff, 0 0 25px #00b5d4, 0 0 50px #009cb8, 0 0 100px #007185;
 }
 
 .turn-off {
     color: #484848;
     text-shadow: none;
+}
+
+.animate {
+    animation: animate 1s infinite linear;
+    animation-delay: .5s;
 }
 
 
