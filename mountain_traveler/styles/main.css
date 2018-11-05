@@ -7,14 +7,16 @@
 }
 
 html {
-    font: 16px normal sans-serif;
-    color: #555;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px; 
+    color: black;
 }
 
 a {
     opacity: 0.75;
     transition: 1s;
-    color: #fff;
+    color: black;
+    cursor: pointer;
 }
 
 a:hover {
@@ -27,16 +29,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 100px 0; 
+    padding: 15px 100px; 
     opacity: 0;
+    margin-top: -100px;
     animation: 1s fadein 0.5s forwards;
-    color: #fff;
+    color: black;
+    z-index: 2;
+    border-bottom: 2px solid rgba(8, 7, 7, 0.7);
 }
 
 @keyframes fadein {
     100% {
         opacity: 1;
+        margin-top: 0;
     }
+}
+
+.logo {
+    font-family: 'Indie Flower', cursive;
+    color: black;
 }
 
 nav {
@@ -53,8 +64,9 @@ a.btn {
     border-radius: 4px;
     font-weight: bold;
     text-align: center;
-    background-color: #3f51b5;
+    background-color: black;
     opacity: 1;
+    color: #f99e64;
 }
 
 section {
@@ -65,7 +77,6 @@ section {
 }
 
 section:not(.hero):nth-child(even) {
-    background-color: #f5f5f5;
 }
 
 .hero {
@@ -83,17 +94,18 @@ section:not(.hero):nth-child(even) {
     width: 100%;
     height: 100%;
     background-size: cover;
+    background-attachment: fixed;
     z-index: -1;
     background-color: #80a3db; 
 }
 
 .hero h1 {
-    font: bold 60px sans-serif;
+    font-size: 90px;
     margin-bottom: 15px;
 }
 
 .hero h3 {
-    font: normal 30px sans-serif;
+    font-size: 30px;
     margin-bottom: 40px;
 }
 
@@ -104,7 +116,7 @@ section:not(.hero):nth-child(even) {
 .hero-content-area {
     opacity: 0;
     margin-top: 100px;
-    animation: 1s slide 1s forwards;
+    animation: 1s slide 1.2s forwards;
 }
 
 @keyframes slide {
@@ -117,14 +129,15 @@ section:not(.hero):nth-child(even) {
 hr {
     width: 250px;
     height: 3px;
-    background-color: #3f51b5;
+    background-color: black;
     border: 0;
     margin-bottom: 50px;
 }
 
 section h3.title {
     text-transform: capitalize;
-    font: bold 32px sans-serif;
+    font-size: 32px;
+    font-weight: bold;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -161,6 +174,9 @@ section p {
     flex-basis: 60%;
 }
 
+.packages {
+    background-color: #f5f5f5;
+}
 
 .packages .grid li {
     flex-basis: 50%;
@@ -185,6 +201,11 @@ section p {
     margin: 40px 0 25px;
 }
 
+.contact {
+    position: relative;
+    font-size: 22px;
+}
+
 
 .contact form {
     display: flex;
@@ -202,13 +223,22 @@ section p {
     padding: 15px;
     margin-right: 30px;
     font-size: 18px;
-    color: #555;
+    color: black;
     flex: 1;
 }
 
 footer {
-    background-color: #3f51b5;
-    
+    background-color: black;   
+}
+
+footer a {
+    color: #f99e64;
+}
+
+form input {
+    background-color: #f99e64;
+    outline: none;
+    border: black solid 2px;
 }
 
 footer ul {
