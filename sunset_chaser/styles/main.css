@@ -215,11 +215,11 @@ section p {
     transform: perspective(600px) rotateY(180deg);
 }
 
-.card:hover .front {
+.card:hover .front, .card:active .front {
     transform: perspective(600px) rotateY(-180deg);
 }
 
-.card:hover .back {
+.card:hover .back, .card:active .back {
     transform: perspective(600px) rotateY(0);
 }
 
@@ -388,9 +388,8 @@ footer ul li {
         flex-basis: 100%;
     }
 
-    #packages .grid li {
+    .card {
         flex-basis: 100%;
-        padding: 20px;
     }
 
     #testimonials .quote {
