@@ -5,86 +5,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mountain Traveler</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <title>Sunset Chaser</title>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Varela+Round" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/cssmin.css">
 </head>
 
 <body>
 
     <header>
-        <div><a href="#" class="logo">Mountain Traveler</a></div>
+        <div><a href="#" class="logo">Sunset Chaser</a></div>
         <nav>
-            <li><a href='#home'>Home</a></li>
-            <li><a href='#packages'>About</a></li>
-            <li><a href='#destinations'>Tours</a></li>
-            <li><a href='#testimonials'>Testimonials</a></li>
+            <li class='menu'><a href='#home'>Home</a></li>
+            <li class='menu'><a href='#packages'>About</a></li>
+            <li class='menu'><a href='#testimonials'>Testimonials</a></li>
         </nav>
-        <div class="submit-btn"><a href="#" >Menu</a></div>
+        <div class="submit-btn"><a href="#">Menu</a></div>
     </header>
 
     <section class='hero' id='home'>
         <div class="background-image" style="background-image: url(./images/main.jpg);"></div>
         <div class="hero-content-area">
-            <h1 class="logo main-logo">Mountain Traveler</h1>
-            <h3>Cycling tours arond the world</h3>
-            <a href="" class="btn">Contact us</a>
+            <h1 class="logo main-logo">Sunset Chaser</h1>
+            <h3>Are you looking for a splendid sunset?</h3>
+            <a href="" class="btn">Join us</a>
         </div>
     </section>
-    
+
     <section id="packages">
-        <h3 class="title">Tour Packages</h3>
-        <p>We offer a variety of mountaineering packages. Whether you've climbed Everest or don't even know what a mountain is, we've got the perfect vacation for you.</p>
+        <h3 class="title">About Us</h3>
+        <p>Do not go gentle into that good night,
+            Old age should burn and rave at close of day;<br>
+            Rage, rage against the dying of the light.</p>
+        <p>Dylan Thomas</p>
 
         <ul class="grid">
-            <li>
-                
-                <h4>Guided Trips <i class="fa fa-compass"></i></h4>
-                <p>Looking for the complete experience? Take a tour with one of our experts. They'll show you secrets that you're likely to miss otherwise.</p>
+            <li class='card'>
+                <div class="front">
+                    <div class="front-content">
+                        <h1>Yellow Trip</h1>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="card-image yellow"></div>
+                </div>
+
             </li>
-            <li> 
-                <h4>Photo Trips <i class="fa fa-camera-retro"></i></h4>
-                <p>What to experience nature's beauty without all of that annoying exercise? Take a photo tour on one of our moutain buses.</p>
+            <li class='card'>
+                <div class="front">
+                    <div class="front-content">
+                        <h1>Orange Trip</h1>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="card-image orange"></div>
+                </div>
             </li>
-            <li>
-                <h4>Racing Trips <i class="fa fa-flag-checkered"></i></h4>
-                <p>Got a competitive spirit? Sign up for one of our mountain marathons. Try to reach the summit before anyone else.</p>
+            <li class='card'>
+                <div class="front">
+                    <div class="front-content">
+                        <h1>Red Trip</h1>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="card-image red"></div>
+                </div>
+            </li>
+            <li class='card'>
+                <div class='front'>
+                    <div class="front-content">
+                        <h1>Purple Trip</h1>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="card-image purple"></div>
+                </div>
             </li>
         </ul>
+
     </section>
 
-
-    <section id="destinations">
-        <h3 class="title">Some of our destinatinos:</h3>
-        <p>Tired of the ocean? Are the plains too plain? Come along with us on one of our mountain adventures. Here are some pictures from people who have had elevated experiences with us.</p>
-        <hr>
-        <div class="grid">
-            <div class="picture small" style="background-image:url(./images/mountain1.jpg);"></div>
-            <div class="picture large" style="background-image:url(./images/mountain2.jpg);"></div>
-            <div class="picture large" style="background-image:url(./images/mountain3.jpg);"></div>
-            <div class="picture small" style="background-image:url(./images/mountain4.jpg);"></div>
-        </div>
-    </section>
 
 
 
     <section id="testimonials">
         <h3 class="title">Testimonials from our adventures: </h3>
         <hr>
-        <p class="quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus quibusdam beatae reiciendis pariatur asperiores! Nesciunt nisi odit facilis, accusamus veniam quas eius ex odio dolorem eligendi quos nobis, nihil iure.</p>
-        <p class="author">--Don Juan</p>
-        <p class="quote">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo amet nihil non dolorem iure, a saepe necessitatibus voluptate harum officia impedit odio vel nisi, rerum rem nesciunt ipsam ducimus sequi!</p>
-        <p class="author">--Giacomo Casanova</p>
-        <p class="quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum optio ad, rem soluta laudantium exercitationem enim magni porro debitis atque iusto aliquid doloremque voluptatibus libero nam blanditiis labore, reiciendis corporis?</p>
-        <p class="author">--Wile Coyote</p>
+        <p class="quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus quibusdam beatae reiciendis
+            pariatur asperiores! Nesciunt nisi odit facilis, accusamus veniam quas eius ex odio dolorem eligendi quos
+            nobis, nihil iure.</p>
+        <p class="author">--Neil A. Armstrong</p>
+        <p class="quote">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo amet nihil non dolorem iure, a
+            saepe necessitatibus voluptate harum officia impedit odio vel nisi, rerum rem nesciunt ipsam ducimus sequi!</p>
+        <p class="author">--Michael Collins</p>
+        <p class="quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum optio ad, rem soluta
+            laudantium exercitationem enim magni porro debitis atque iusto aliquid doloremque voluptatibus libero nam
+            blanditiis labore, reiciendis corporis?</p>
+        <p class="author">--Edwin E. "Buzz" Aldrin, Jr.</p>
+        <iframe width="80%" height="315" src="https://www.youtube.com/embed/x5Dpz6w_jz4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </section>
 
 
     <section class="contact">
         <div class="background-image flip" style="background-image: url(./images/main.jpg);"></div>
         <h3 class="title">Learn more</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nostrum sed ab. Aut, facere. Tempora eum, delectus nemo laboriosam, eligendi eos officia facere nesciunt veritatis sit ratione. Laborum non eligendi sint voluptatibus. Facilis rerum quibusdam reiciendis numquam maxime nostrum sed?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nostrum sed ab. Aut, facere. Tempora eum,
+            delectus nemo laboriosam, eligendi eos officia facere nesciunt veritatis sit ratione. Laborum non eligendi
+            sint voluptatibus. Facilis rerum quibusdam reiciendis numquam maxime nostrum sed?</p>
         <hr>
         <footer>
             <ul>
@@ -92,16 +121,11 @@
                 <li><a href='#'><i class="fab fa-twitter fa-2x"></i></a></li>
                 <li><a href='#'><i class="fab fa-instagram fa-2x"></i></a></li>
                 <li><a href='#'><i class="fas fa-envelope fa-2x"></i></a></li>
-    
             </ul>
         </footer>
-        <!-- <form>
-            <input type="email" placeholder="Email...">
-            <a href="#" class='btn'>Subscribe</a>
-        </form> -->
     </section>
 
-   
+
     <script src="main.js"></script>
 </body>
 
