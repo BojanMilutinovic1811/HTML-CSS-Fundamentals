@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 html {
@@ -13,9 +15,268 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-.row {
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2::after {
+    content: '';
+    background: #e67e22;
+    height: 2px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    letter-spacing: none;
+}
+
+section {
+    padding: 80px 0;
+}
+/* .row {
     max-width: 1140px;
     margin: 0 auto;
-    border: blue 1px solid;
+} */
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./images/hero.jpg) center center/cover;
+    height: 100vh;
+    position: relative;
+}
+/* 
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+
+} */
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+}
+
+.main-heading {
+    font-size: 240%;
+    color: #fff;
+    word-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 200px;
+    line-height: 100%;
+    text-align: center;
+    transition: 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 85%;
+    letter-spacing: 1px;
+}
+
+.btn-full {
+    background-color: #e67e22;
+    border: #e67e22 solid 1px;
+    color: #fff;
+    margin-right: 15px;
+
+}
+
+.btn-outline {
+    border: #e67e22 solid 1px;
+    color: #e67e22;
+}
+
+.btn:active,
+.btn:hover {
+    background-color: #cf6d17;
+    color: #fff;
+    border: #cf6d17 solid 1px;
+}
+
+
+
+/* _______________NAVIGATION________________________ */
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 30px;
+}
+.main-nav ul li a {
+    padding: 8px 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #e67e22;
+    opacity: 1;
+}
+
+
+/* _________________FEATURES_______________________ */
+
+.long-copy {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.feature-boxes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    flex-basis: 22%;
+    padding: 1%;
+    text-align: center;
+    margin: 0 1%;
+}
+
+.box p {
+    font-size: 85%;
+    line-height: 150%;
+}
+
+.feature-i {
+    font-size: 220%;
+    color: #e67e22;
+    margin-bottom: 2%;
+}
+
+
+
+/* _____________MEALS SECTION_____________ */
+
+.section-meals {
+    padding: 0;
+}
+
+.showcase {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.showcase li {
+    width: 25%;
+    overflow: hidden;
+    background: #000;
+}
+
+.showcase img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.16);
+    opacity: 0.7;
+    transition: .5s;
+}
+
+.showcase img:hover {
+    transform: scale(1.04);
+    opacity: 1;
+}
+
+
+
+/* ______________HOW IT WORKS SECTION____________________ */
+
+
+.section-steps {
+    background: #f4f4f4;
+}
+.steps-content {
+    margin-top: 50px;
+    display: flex;
+    max-width: 1140px;
+}
+
+.img-container {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.steps-content img {
+    width: 40%;
+}
+
+.work-steps {
+    align-self: center;
+}
+.step {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    flex-shrink: 0;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.download {
+    text-align: center;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+
 }
