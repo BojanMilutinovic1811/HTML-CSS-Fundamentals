@@ -54,6 +54,7 @@ section {
 
 header {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./images/hero.jpg) center center/cover;
+    background-attachment: fixed;
     height: 100vh;
     position: relative;
 }
@@ -91,7 +92,7 @@ header::before {
     line-height: 100%;
     text-align: center;
     transition: 0.3s;
-    font-weight: bold;
+    font-weight: 300;
     text-transform: uppercase;
     font-size: 85%;
     letter-spacing: 1px;
@@ -231,7 +232,7 @@ nav {
 
 
 .section-steps {
-    background: #f4f4f4;
+    background: #e4e4e4;
 }
 .steps-content {
     margin-top: 50px;
@@ -279,4 +280,147 @@ nav {
     width: auto;
     margin-right: 15px;
 
+}
+
+
+/* ______________CITIES SECTION___________________ */
+
+.cities-container {
+    display: flex;
+    justify-content: center;
+}
+.city img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.city-icons {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.city-icons i {
+    color: #e67e22;
+    margin-right: 10px;
+}
+
+
+/* ___________________TESTIMONIALS___________________ */
+
+.section-testimonials {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./images/back-customers.jpg) center center/cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.testimonials,
+.price-cards-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    flex-basis: 30%;
+}
+
+blockquote::before {
+    content: '\201c';
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+
+}
+
+
+cite {
+    display: block;
+    font-size: 90%;
+    margin-top: 25px;
+    vertical-align: middle;
+}
+
+cite img {
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+/* _________________________SECTION PLANS______________________ */
+
+
+.section-plans {
+    background-color: #e4e4e4;
+}
+
+.price-card {
+    flex-basis: 30%;
+    padding: 2%;
+    margin-left: 2%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 15px 15px darkgray;
+
+}
+
+.price-card div {
+    padding: 10px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.price-card h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    color: #e67e22;
+    font-weight: 100;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.price-icon {
+    color: #e67e22;
+    font-size: 60%;
+    margin-right: 10px;
+}
+
+.price-card div:last-child {
+    text-align: center;
+    border: none;
+}
+
+.price-card div:first-child {
+    background-color: rgb(248, 248, 248);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/* _________________FORM SECTION______________________ */
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    flex-basis: 30%;
+}
+
+.rest-form {
+    flex-basis: 65%;
 }
