@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Omnifood</title>
-    <!-- <link rel="stylesheet" href="./vendors/css/normalize.css"> -->
-    <link rel="stylesheet" href="./vendors/css/Grid.css" />
     <link rel="stylesheet" href="./resources/css/style.css" />
+    <link rel="stylesheet" href="./resources/css/queries.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -22,33 +21,39 @@
 
   <body>
     <header>
-      <nav>
+      <nav >
         <img
           src="./resources/images/logo-white.png"
           alt="Omnifood logo"
           class="logo"
         />
+        <img
+          src="./resources/images/logo.png"
+          alt="Omnifood logo"
+          class="logo-black"
+        />
 
-        <div class="main-nav">
+        <div class="main-nav invisible">
           <ul>
-            <li><a href="">Food delivery</a></li>
-            <li><a href="">How it works </a></li>
-            <li><a href="">Our cities</a></li>
-            <li><a href="">Sign up</a></li>
+            <li><a href="#delivery">Food delivery</a></li>
+            <li><a href="#instructions">How it works </a></li>
+            <li><a href="#cities-link">Our cities</a></li>
+            <li><a href="#message">Sign up</a></li>
           </ul>
         </div>
+        <a class='mobile-nav-icon'><i class="fas fa-bars"></i></a>
       </nav>
 
       <div class="hero-text-box">
         <h1 class="main-heading">
           Goodbye junk food,<br />Hello super healthy meals!
         </h1>
-        <a href="#" class="btn btn-full">I’m hungry</a>
-        <a href="#" class="btn btn-outline">Show me more</a>
+        <a href="#plan" class="btn btn-full">I’m hungry</a>
+        <a href='#delivery' class="btn btn-outline">Show me more</a>
       </div>
     </header>
 
-    <section class="section-features">
+    <section class="section-features" id='delivery'>
       <h2>Get food fast &mdash; not fast food</h2>
       <p class="long-copy">
         Hello, we’re Omnifood, your new premium food delivery service. We know
@@ -109,7 +114,7 @@
       </ul>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id='instructions'>
       <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       <div class="steps-content">
         <div class="img-container">
@@ -152,7 +157,7 @@
       </div>
     </section>
 
-    <section class="cities">
+    <section class="cities" id='cities-link'>
       <h2>We're currently in these cities</h2>
       <div class="cities-container">
         <div class="city box">
@@ -247,7 +252,7 @@
       </div>
     </section>
 
-    <section class="section-plans">
+    <section id='plan' class="section-plans">
       <h2>Start eating healthy today</h2>
       <div class="price-cards-container">
         <div class="price-card">
@@ -311,7 +316,7 @@
       </div>
     </section>
 
-    <section class="section-form">
+    <section class="section-form" id='message'>
       <h2>We're happy to hear from you</h2>
       <div class="form-container">
         <form  class="contact-form">
@@ -373,16 +378,13 @@
       <p>Copyright &copy; 2018 by Omnifood</p>
     </footer>
 
-    <!--
-      Section 7: Contact form
-      Title:
+ 
 
-      Fields to include:
-      Name
-      Email
-      How did you find us?
-      Newsletter
-      Drop us a line
-    -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="./resources/js/jquery.waypoints.min.js"></script>
+  <script src="./resources/js/script.js"></script>
   </body>
 </html>
