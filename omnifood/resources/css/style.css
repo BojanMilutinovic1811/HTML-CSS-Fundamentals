@@ -412,15 +412,138 @@ cite img {
 
 
 /* _________________FORM SECTION______________________ */
-form {
+
+
+.section-form {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./images/restaurant.jpeg);
+    background-position: bottom;
+    background-size: cover;
+    color: #fff;
+    min-height: 80vh;
+    position: relative;
+}
+
+.form-container {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    padding: 15px;
+    background: rgba(219, 219, 219, 0.2);
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+    min-height: 300px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    font-size: 80%;
+    font-weight: 300;
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #e67e22;
+    outline: none;
+    background: transparent;
+}
+
+.input-box textarea {
+    font-size:100%;
+    width: 100%;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    padding: 10px 0;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #e67e22;
+    outline: none;
+    background: transparent;
 }
 
 label {
-    flex-basis: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 100%;
+    pointer-events: none;
+    transition: .5s;
 }
 
-.rest-form {
-    flex-basis: 65%;
+input:focus ~ label,
+input:valid ~ label {
+    top: -25px;
+    left: 0;
+    color: #e67e22;
+    font-size: 12px;
+}
+
+form input:last-child {
+    float: right;
+}
+
+/* _________________________FOOTER______________________almost there */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #333;
+    padding: 20px 0;
+}
+
+footer  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+footer ul:nth-child(2) {
+    margin: 15px 0;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    padding: 0 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    transition: .4s;
+
+}
+
+footer ul li:hover a{
+    color: #e67e22;
+}
+
+footer i {
+    font-size: 150%;
+    transition: .4s;
+}
+footer i:hover {
+    color: #e67e22;
+}
+
+footer p {
+    font-size: 70%;
+    margin-top: 10px;
 }
