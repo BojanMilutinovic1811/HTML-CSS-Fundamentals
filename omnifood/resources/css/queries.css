@@ -119,7 +119,10 @@ nav {
         height: 50px;
     }
 
-    
+    .hero-text-box {
+        top: 68%;
+        padding: 5px;
+    }
 
     .btn-full {
         margin-bottom: 15px;

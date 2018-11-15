@@ -65,7 +65,7 @@ header {
     right: 0;
     height: 0;
     width: 100%;
-    background: #262626;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/matrix\ azul\ -\ Imgur.gif) center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,6 +73,9 @@ header {
     text-align: center;
     overflow: hidden;
     transition: 0.5s; 
+}
+.menu::before {
+    
 }
 
 .menu-show {
