@@ -1,0 +1,15 @@
+.section-search input {
+    padding: 5px !important;
+    font-size: 18px !important;
+    width: 80% !important;
+    border: 3px #f4f4f4 solid !important;
+}
+
+
+.section-follow .fa-4x {
+    margin: 5px 3%;
+}
+
+.section-gallery img {
+    margin-bottom: 5px !important;
+}
