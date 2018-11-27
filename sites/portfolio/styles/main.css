@@ -219,7 +219,7 @@ header {
 /* about section */
 
 #about {
-    background: url(../images/about.jpg) center center/cover;
+    background: url(../images/aboutcropped.jpg) center center/cover;
     height: 100vh;
     padding-top: 20px;
     position: relative;
