@@ -17,12 +17,24 @@
   background: url(../img/background.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 600px;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.main-header-inner {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
   color: #fff;
 }
 
 .main-header .showcase {
   padding-top: 100px; 
+}
+
+.main-header-inner .showcase {
+  padding-top: 50px;
 }
 
 .active-link {
@@ -32,18 +44,18 @@
 
 
 
-.section-developers {
+.section-developers, .section-podcast {
   position: relative;
-  background: url(../img/code.jpg);
+  background: url(../img/circuit.jpg);
   background-size: cover;
   background-position: center;
   border-top: solid 5px #333;
   border-bottom: solid 5px #333;
-  min-height: 180px;
+  min-height: 160px;
 }
 
 .primary-overlay {
-  background: rgba(112, 81, 176, .7);
+  background: rgba(112, 81, 176, .9);
   position: absolute;
   top: 0;
   left: 0;
@@ -51,3 +63,45 @@
   height: 100%;
   overflow: hidden;
 }
+
+.section-podcast a {
+  margin-top: 30px;
+}
+
+
+@media(max-width: 500px) {
+  .section-developers, .section-podcast {
+    min-height: 240px;
+  }
+}
+
+
+.carousel-item p {
+  font-size: 150% !important;
+}
+
+.indicator-item {
+  background: black !important 
+  }
+
+.indicator-item.active {
+    background: grey !important;
+  }
+
+  label {
+    color: #d847f1 !important;
+  }
+
+  input:focus {
+    border-bottom: #d847f1 solid 1px !important;
+  }
+
+  .select-wrapper input.select-dropdown, .dropdown-content li > a, .dropdown-content li > span {
+    color: #d847f1 !important;
+  }
+
+  .btn-extend {
+    display: block;
+    width: 100%;
+  }
+
