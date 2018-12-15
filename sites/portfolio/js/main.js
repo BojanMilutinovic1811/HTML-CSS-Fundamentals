@@ -122,3 +122,10 @@ function counterClass() {
         }
     }, lightsInterval)
 }
+
+
+// particles js
+
+particlesJS.load('particles-js', 'particles.json', function() {
+    
+  });
