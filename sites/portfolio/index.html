@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
 
 </head>
 
@@ -57,18 +58,22 @@
             </ul>
         </main>
         <section id="about">
-            <div class="section-content">
-                <h3 class="title">about me</h3>
-                <p class="text">My name is Bojan Milutinovic and I might be the worst developer you have ever heard
-                    of, but at least you have heard of me. Joking apart, I am very professional, highly responsible and
-                    dedicated person. If you want to find out more about me and what I have done so far in my life you
-                    can
-                    download my CV or scroll the page to see my work.</p>
+            <div>
+                <div class="section-content">
+                    <h3 class="title">about me</h3>
+                    <p class="text">My name is Bojan Milutinovic and I might be the worst developer you have ever heard
+                        of, but at least you have heard of me. Joking apart, I am very professional, highly responsible
+                        and
+                        dedicated person. If you want to find out more about me and what I have done so far in my life
+                        you
+                        can
+                        download my CV or scroll the page to see my work.</p>
+                </div>
+                <a href='#' id='cv'>Download CV</a>
             </div>
-            <a href='#' id='cv'>Download CV</a>
         </section>
         <section id='myWork'>
-                <div id="particles-js"></div>
+            <div id="particles-js"></div>
             <div class="section-content">
                 <h3 class="title">My Work</h3>
                 <p class="text">I'm familiar with these technologies: HTML5, CSS3, JavaScript, Bootstrap, Materialize,
@@ -83,39 +88,41 @@
                     of my work, the rest is on my GitHub profile so feel free to check that out as well.</p>
             </div>
             <div class="workContainer">
-                <a href="https://jolly-swanson-ba2fb1.netlify.com/" target="_blank">
-                    <div class="work">
-                        <div class="typenspeak imgBackground"></div>
-                        <div class="about-project">Type some text and let the app read it for you.<br>HTML5, Bootstrap,
-                            JavaScript</div>
+                    <div id='work'>
+                        <a href="https://jolly-swanson-ba2fb1.netlify.com/" target="_blank">
+                            <div class="typenspeak imgBackground"></div>
+                            <div class="about-project">Type some text and let the app read it for you.<br>HTML5,
+                                Bootstrap,
+                                JavaScript</div>
+                        </a>
                     </div>
-                </a>
-                <div class="work">
-                    <div class="webPage imgBackground progress"></div>
-                    <div class="about-project">Simple web page. <br> HTML5, CSS3, JavaScript</div>
-                </div>
-                <a href="https://relaxed-kowalevski-f1dc94.netlify.com/#home-section" target="_blank">
-                    <div class="work">
-                        <div class="bootstrapWebpage imgBackground"></div>
-                        <div class="about-project">Commercial web page.<br>HTML5, Bootstrap</div>
+                    <div id='work'>
+                        <div class="webPage imgBackground progress"></div>
+                        <div class="about-project">Simple web page. <br> HTML5, CSS3, JavaScript</div>
                     </div>
-                </a>
-                <a href="https://admiring-northcutt-7f96ab.netlify.com/" target="_blank">
-                    <div class="work">
-                        <div class="responsiveWebpage imgBackground"></div>
-                        <div class="about-project">Responsive web page.<br>HTML5, Bootstrap, CSS3</div>
+                    <div id='work'>
+                        <a href="https://relaxed-kowalevski-f1dc94.netlify.com/#home-section" target="_blank">
+                            <div class="bootstrapWebpage imgBackground"></div>
+                            <div class="about-project">Commercial web page.<br>HTML5, Bootstrap</div>
+                        </a>
                     </div>
-                </a>
-                <a href="https://modest-golick-efbbc9.netlify.com/" target='_blank'>
-                    <div class="work">
-                        <div class="loanCalculator imgBackground"></div>
-                        <div class="about-project">The app will calculate your loan rate.<br>HTML5, JavaScript,
-                            Bootstrap</div>
+                    <div id='work'>
+                        <a href="https://admiring-northcutt-7f96ab.netlify.com/" target="_blank">
+                            <div class="responsiveWebpage imgBackground"></div>
+                            <div class="about-project">Responsive web page.<br>HTML5, Bootstrap, CSS3</div>
+                        </a>
                     </div>
-                </a>
-                <div class="work">
-                    <div class="robofriends imgBackground progress"></div>
-                    <div class="about-project">Let the app find your robo-friend.<br>React</div>
+                    <div id='work'>
+                        <a href="https://modest-golick-efbbc9.netlify.com/" target='_blank'>
+                            <div class="loanCalculator imgBackground"></div>
+                            <div class="about-project">The app will calculate your loan rate.<br>HTML5, JavaScript,
+                                Bootstrap</div>
+                        </a>
+                    </div>
+                    <div id='work'>
+                        <div class="robofriends imgBackground progress"></div>
+                        <div class="about-project">Let the app find your robo-friend.<br>React</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -138,8 +145,9 @@
         </footer>
     </div>
 
-    <script src="js/main.js"></script>
+  
     <script src="js/particles.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
