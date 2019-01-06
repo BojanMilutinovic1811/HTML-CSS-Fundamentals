@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    min-height: 100vh;
+    background: #ffff83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login {
+    text-align: center;
+    width: 350px;
+    padding: 40px;
+    background: white;
+    border-radius: 3%;
+
+}
+
+.login h2 {
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login .input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.login .input-group input {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.login .input-group span {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    transition: .5s;
+    pointer-events: none;
+    text-transform: uppercase;
+    background: white;
+}
+
+.login .input-group input:focus ~ span,
+.login .input-group input:valid ~ span {
+    top: -12px;
+    left: 12px;
+    font-size: 12px;
+    padding: 2px 4px;
+    border: 1px solid black;
+    background: #ffff83;
+}
+
+.login .input-group input[type='submit'] {
+    background: #ff0;
+    border: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    width: 60%;
+    border-radius: 3%;
+    letter-spacing: 3px;
+}
+
+.login .input-group input[type='submit']:hover {
+    background: #ffc107;
+}
+
+.login a {
+    display: block;
+    text-align: right;
+    color: #666;
+    text-decoration: none;
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+.login a span {
+    color: #262626;
+    text-transform: uppercase;
+
+}
+
+
