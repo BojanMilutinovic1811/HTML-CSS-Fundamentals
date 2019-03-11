@@ -3,13 +3,19 @@
     src: url('./fonts/HACKED.ttf')   
 }
 
+* {
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
 body {
     --glitch-width: 100vw;
     --glitch-height: 100vh;
     --gap-horizontal: 10px;
     --gap-vertical: 5px;
-    --time-anim: 8s;
-    --delay-anim: 3s;
+    --time-anim: 10s;
+    --delay-anim: 4s;
     --blend-mode-1: none;
     --blend-mode-2: none;
     --blend-mode-3: none;
@@ -20,13 +26,14 @@ body {
     --blend-color-3: transparent;
     --blend-color-4: #90f7fb;
     --blend-color-5: #5ed45a; 
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+
 }
 
     .about {
         position: relative;
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
 
     }
 
@@ -35,20 +42,73 @@ box-sizing: border-box;
         font-size: 200%;
     }
 
+    hr {
+        color: white;
+        height: 3px;
+        margin-bottom: 15px;
+        margin-top: -5px;
+    }
+
     .title {
         position: absolute;
-        left: 70%;
-        top: 20px;
-        text-align: center;
+        left: 5%;
+        top: 10vh;
+        min-height: 200px;
         padding: 20px;
         font-size: 20px;
-        width: 25%;
+        width: 30%;
         background: black;
         color: white;
         z-index: 3;
-        min-height: 100px;
         opacity: .9;
-        font-family: 'HACKED'
+        font-family: 'HACKED';
+        margin-right: -200%;
+        animation: show;
+        animation-duration: 1s; 
+        animation-fill-mode: forwards; 
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        border-top: white 8px solid;
+    }
+@keyframes show {
+    from {top: -100vh}
+    to {top: 10vh}
+}
+
+.cv {
+    background: black;
+    opacity: 0.9;
+    font-family: 'HACKED';
+    position: absolute;
+    bottom: 20vh; 
+    right: -100%;
+    animation: showcv;
+    animation-duration: .8s; 
+    animation-delay: 11s;
+    animation-fill-mode: forwards; 
+    z-index: 3;
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-right: white solid 8px;
+
+}
+@keyframes showcv {
+    from{right:-100%}
+    to{right:75%}
+}
+
+
+
+    ul {
+        margin: 0;
+        padding: 0;
+    
+    }
+    li {
+        list-style: none;
+        padding: 0;
     }
     
     .glitch {
