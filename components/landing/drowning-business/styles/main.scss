@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Dosis", sans-serif;
+}
+
+$light: #b9e9f4;
+
+@import "burger";
+@import "navigation";
+@import "landing";
+@import "description";

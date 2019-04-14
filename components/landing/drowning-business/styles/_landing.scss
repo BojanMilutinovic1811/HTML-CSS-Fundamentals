@@ -1,0 +1,62 @@
+.landing {
+  background: url("/styles/images/background.jpg") center center/cover;
+  // background-attachment: fixed;
+  min-height: 100vh;
+  color: #b9e9f4;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Dosis", sans-serif;
+}
+
+.text {
+  position: absolute;
+  left: 5%;
+  top: 45%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* background: rgba(000, 000, 000, 0.3); */
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: 800;
+    opacity: 0;
+    animation: fader 3s linear forwards;
+  }
+  p {
+    opacity: 0;
+    font-size: 1.5rem;
+    animation: fader 3s linear forwards;
+  }
+
+  .btn {
+    opacity: 1;
+    align-self: flex-end;
+    padding: 10px;
+    background: yellowgreen;
+    color: black;
+    margin-right: 4rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 200px;
+    animation: diver 2.5s cubic-bezier(0.78, 0.18, 0.59, 1.37) forwards;
+  }
+}
+@keyframes fader {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes diver {
+  100% {
+    margin-top: 0px;
+  }
+}
+
+.text > * {
+  margin: 1rem;
+}
