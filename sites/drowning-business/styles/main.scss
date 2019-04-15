@@ -9,9 +9,16 @@ body {
   font-family: "Dosis", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 $light: #b9e9f4;
 
 @import "burger";
 @import "navigation";
 @import "landing";
-@import "description";
+@import "landing-home";
+@import "landing-seo";
+@import "seo-description";
+@import "description-home";

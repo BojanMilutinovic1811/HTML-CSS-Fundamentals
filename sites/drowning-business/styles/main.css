@@ -11,6 +11,10 @@ body {
   font-family: "Dosis", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .burger {
   position: fixed;
   z-index: 2;
@@ -70,6 +74,10 @@ nav {
   font-weight: bold;
 }
 
+nav a {
+  color: yellowgreen;
+}
+
 nav ul li {
   margin: 2rem 0;
   text-transform: uppercase;
@@ -90,7 +98,6 @@ nav ul li:hover {
 }
 
 .landing {
-  background: url("/styles/images/background.jpg") center center/cover;
   min-height: 100vh;
   color: #b9e9f4;
   position: relative;
@@ -99,7 +106,72 @@ nav ul li:hover {
   font-family: "Dosis", sans-serif;
 }
 
-.text {
+.home {
+  background: url("/styles/images/light-background.jpg") center center/cover;
+}
+
+.home-title {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  -webkit-animation: light 6s linear forwards;
+          animation: light 6s linear forwards;
+  color: black;
+}
+
+@-webkit-keyframes light {
+  100% {
+    color: #fff8e5;
+  }
+}
+
+@keyframes light {
+  100% {
+    color: #fff8e5;
+  }
+}
+
+.home-text {
+  text-align: justify;
+  color: black;
+  border-radius: 2rem;
+  width: 300px;
+  padding: 2rem;
+  position: absolute;
+  left: 52%;
+  top: 40%;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.home-text .btn {
+  background: black;
+  text-align: center;
+  color: yellowgreen;
+  padding: 1rem;
+  width: 70%;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  margin: 1.6rem auto;
+  margin-bottom: 0;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.home-text .btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.seo {
+  background: url("/styles/images/background.jpg") center center/cover;
+}
+
+.text-seo {
   position: absolute;
   left: 5%;
   top: 45%;
@@ -114,7 +186,7 @@ nav ul li:hover {
   /* background: rgba(000, 000, 000, 0.3); */
 }
 
-.text h1 {
+.text-seo h1 {
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -124,14 +196,14 @@ nav ul li:hover {
           animation: fader 3s linear forwards;
 }
 
-.text p {
+.text-seo p {
   opacity: 0;
   font-size: 1.5rem;
   -webkit-animation: fader 3s linear forwards;
           animation: fader 3s linear forwards;
 }
 
-.text .btn {
+.text-seo .btn {
   opacity: 1;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -144,8 +216,15 @@ nav ul li:hover {
   font-weight: bold;
   cursor: pointer;
   margin-top: 200px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-animation: diver 2.5s cubic-bezier(0.78, 0.18, 0.59, 1.37) forwards;
           animation: diver 2.5s cubic-bezier(0.78, 0.18, 0.59, 1.37) forwards;
+}
+
+.text-seo .btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @-webkit-keyframes fader {
@@ -176,7 +255,7 @@ nav ul li:hover {
   margin: 1rem;
 }
 
-.description {
+.description-seo {
   background-color: #000f12;
   padding: 3rem;
   position: relative;
@@ -238,6 +317,65 @@ nav ul li:hover {
   position: absolute;
   z-index: -1000;
   background-color: #012c35;
+  border-radius: 2rem;
+  top: 0;
+  left: 0;
+}
+
+.description-home {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e3129), to(black));
+  background: linear-gradient(to bottom, #3e3129, black);
+  padding: 3rem;
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 8rem;
+  z-index: -3;
+}
+
+.description-text {
+  position: relative;
+  border: yellowgreen solid 0.1rem;
+  width: 70%;
+  padding: 3rem;
+  color: yellowgreen;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.description-text h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.description-text p {
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+.decoration-div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1000;
+  background-color: black;
   border-radius: 2rem;
   top: 0;
   left: 0;

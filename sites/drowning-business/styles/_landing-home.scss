@@ -1,0 +1,52 @@
+.home {
+  background: url("/styles/images/light-background.jpg") center center/cover;
+}
+
+.home-title {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  animation: light 6s linear forwards;
+  color: black;
+  //   transform: rotate(-40deg);
+}
+
+@keyframes light {
+  100% {
+    color: #fff8e5;
+  }
+}
+
+.home-text {
+  //   background: rgba($color: #fff8e5, $alpha: 0.4);
+  text-align: justify;
+  color: black;
+  border-radius: 2rem;
+  width: 300px;
+  padding: 2rem;
+  position: absolute;
+  left: 52%;
+  top: 40%;
+  font-weight: bold;
+  font-size: 1.3rem;
+
+  .btn {
+    background: black;
+    text-align: center;
+    color: yellowgreen;
+    padding: 1rem;
+    width: 70%;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    margin: 1.6rem auto;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .btn:hover {
+    transform: scale(1.05);
+  }
+}

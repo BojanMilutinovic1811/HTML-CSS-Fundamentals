@@ -15,6 +15,10 @@ nav {
   visibility: hidden;
   font-weight: bold;
 
+  a {
+    color: yellowgreen;
+  }
+
   ul li {
     margin: 2rem 0;
     text-transform: uppercase;
