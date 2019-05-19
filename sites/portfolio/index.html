@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bojan Milutinovic Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -46,7 +46,9 @@
                 <span class='letters'>a</span>
                 <span class='letters toAnimate'>n</span>
             </h1>
-            <h3 class='sub-heading text-shadow'>Web Developer</h3>
+
+            <h3 class='sub-heading text-shadow'><img id="crown"
+                    src="./images/PinClipart.com_picsart-smoke-clipart_189649.png" alt="crown">Web Developer</h3>
             <ul id='open' class='text-shadow'>
                 <li class='openList'>o</li>
                 <li class='openList'>p</li>
@@ -97,25 +99,25 @@
                 <div id="html-work">
                     <h5>html</h5>
                     <div class="workContainer">
-                    <div id='work'>
-                        <a href="https://jolly-swanson-ba2fb1.netlify.com/" target="_blank">
-                            <div class="typenspeak imgBackground"></div>
-                            <div class="about-project">Type some text and let the app read it for you.<br>HTML5,
-                                Bootstrap,
-                                JavaScript</div>
-                        </a>
+                        <div id='work'>
+                            <a href="https://jolly-swanson-ba2fb1.netlify.com/" target="_blank">
+                                <div class="typenspeak imgBackground"></div>
+                                <div class="about-project">Type some text and let the app read it for you.<br>HTML5,
+                                    Bootstrap,
+                                    JavaScript</div>
+                            </a>
+                        </div>
+                        <div id='work'>
+                            <div class="webPage imgBackground progress"></div>
+                            <div class="about-project">Simple web page. <br> HTML5, CSS3, JavaScript</div>
+                        </div>
+                        <div id='work'>
+                            <a href="https://relaxed-kowalevski-f1dc94.netlify.com/#home-section" target="_blank">
+                                <div class="bootstrapWebpage imgBackground"></div>
+                                <div class="about-project">Commercial web page.<br>HTML5, Bootstrap</div>
+                            </a>
+                        </div>
                     </div>
-                    <div id='work'>
-                        <div class="webPage imgBackground progress"></div>
-                        <div class="about-project">Simple web page. <br> HTML5, CSS3, JavaScript</div>
-                    </div>
-                    <div id='work'>
-                        <a href="https://relaxed-kowalevski-f1dc94.netlify.com/#home-section" target="_blank">
-                            <div class="bootstrapWebpage imgBackground"></div>
-                            <div class="about-project">Commercial web page.<br>HTML5, Bootstrap</div>
-                        </a>
-                    </div>
-                </div>
                 </div>
                 <div class=" workContainer" id="javascript-work">
                     <h5>javascript</h5>
@@ -139,16 +141,27 @@
                 </div>
             </div>
         </section>
+        <div id="decoration"></div>
         <section id='contact'>
             <div class="contact-title">
-                <h3 class='contact-heading'><span class='drop-contact'>Cont</span>act <span class='contact-animate'>me</span></h3>
+                <h3 class='contact-heading'><span class='drop-contact'>Cont</span>act <span
+                        class='contact-animate'>me</span></h3>
             </div>
+
+            <form action="">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+                <textarea name="" id="" cols="30" rows="10">Type your message here...</textarea>
+            </form>
             <div class="icons">
                 <ul>
                     <li><a href='tel:381-065-3000-313'><i class="fas fa-phone-square"></i></a></li>
-                    <li><a href='https://www.linkedin.com/in/bojan-milutinovic-938b62117/' target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href='https://github.com/BojanMilutinovic1811' target='_blank'><i class="fab fa-github-square"></i></a></li>
-                    <li><a href='https://www.facebook.com/SOYCDBM' target='blank'><i class="fab fa-facebook"></i></a></li>
+                    <li><a href='https://www.linkedin.com/in/bojan-milutinovic-938b62117/' target="_blank"><i
+                                class="fab fa-linkedin"></i></a></li>
+                    <li><a href='https://github.com/BojanMilutinovic1811' target='_blank'><i
+                                class="fab fa-github-square"></i></a></li>
+                    <li><a href='https://www.facebook.com/SOYCDBM' target='blank'><i class="fab fa-facebook"></i></a>
+                    </li>
                     <li><a href='mailto:bojanmilutinovic1811@gmail.com'><i class="fas fa-envelope-square"></i></a></li>
                 </ul>
             </div>
@@ -158,7 +171,7 @@
         </footer>
     </div>
 
-  
+
     <script src="js/particles.min.js"></script>
     <script src="js/main.js"></script>
 </body>
